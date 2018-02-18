@@ -17,10 +17,6 @@ import java.util.Random;
 public class SolarActivity {
     //N – общее количество показаний прибора, N > 6, arr[i]>0
     public static int test(int N, int arr []){
-//        int N;
-//        int arr [] = new int[N];
-
-        ArrayList <Integer> proizv = new ArrayList<Integer>();
         int min=1000000;
         for(int i = 0;i<N;i++){
             if(i+6<arr.length){
@@ -30,11 +26,6 @@ public class SolarActivity {
 
             if(proiz%2!=0){
                 System.out.println(proiz);
-//            proizv.add(proiz);
-
-//                min = proiz;
-//                for(int n =1;n<proizv.size();n++){
-//        System.out.println(proizv.get(n));
                     if(proiz<min) {
                         min = proiz;
 //            System.out.println(min);
@@ -42,16 +33,6 @@ public class SolarActivity {
 
             }
         }}
-//        int min = proizv.get(0);
-//        for(int n =1;n<proizv.size();n++){
-////        System.out.println(proizv.get(n));
-//
-//        if(proizv.get(n)<min){
-//            min =proizv.get(n);
-////            System.out.println(min);
-//        }
-//        }
-//return min;
         return min!=0 ? min :-1;
 //        else return -1;
        //минимальное нечётное произведение двух показаний, между моментами передачи которых прошло не менее 6 минут
